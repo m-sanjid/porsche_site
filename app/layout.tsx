@@ -12,6 +12,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Porsche Site | Muhammed Sanjid",
   description: "Porsche Site by muhammed sanjid",
+  viewport:
+    "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
 };
 
 export default function RootLayout({
@@ -21,6 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
+      </head>
       <body className={`${inter.variable} antialiased`}>
         <PorscheDesignSystemProvider>
           {children}

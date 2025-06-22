@@ -107,7 +107,7 @@ const ContactFAB = () => {
   };
 
   return (
-    <div className="fixed right-6 bottom-6 z-50">
+    <div className="fixed right-4 bottom-4 z-50 md:right-6 md:bottom-6">
       <motion.div
         ref={containerRef}
         variants={fabVariants}
@@ -148,14 +148,16 @@ const ContactFAB = () => {
               initial="closed"
               animate="open"
               exit="closed"
-              className="flex h-[16rem] w-[40rem] flex-col items-center space-y-5 p-6 text-center"
+              className="flex h-[14rem] w-full flex-col items-center space-y-4 p-4 text-center md:h-[16rem] md:w-[40rem] md:space-y-5 md:p-6"
             >
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.3 }}
               >
-                <PHeading size="large">Let&apos;s get connected</PHeading>
+                <PHeading size="medium" className="md:text-large">
+                  Let&apos;s get connected
+                </PHeading>
               </motion.div>
 
               <motion.div
@@ -163,12 +165,12 @@ const ContactFAB = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.25, duration: 0.3 }}
               >
-                <PText color="primary">
+                <PText color="primary" className="text-sm md:text-base">
                   Follow me on socials, explore my work, or hire me!
                 </PText>
               </motion.div>
 
-              <div className="flex gap-6 text-2xl">
+              <div className="flex gap-4 text-xl md:gap-6 md:text-2xl">
                 {[
                   {
                     icon: IconBrandLinkedin,

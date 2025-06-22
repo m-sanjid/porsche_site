@@ -10,7 +10,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative z-40 flex min-h-[120vh] flex-col items-center justify-center">
+    <div className="relative z-40 flex min-h-[120vh] flex-col items-center justify-center px-4">
       <HeroText />
       <div className="sticky top-40 mx-auto h-[50%] w-full max-w-7xl">
         <Image
@@ -45,15 +45,15 @@ const HeroText = () => {
       className="sticky top-50 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
       style={{ y: yProgress, opacity: opacityProgress }}
     >
-      <PModelSignature className="block [--p-model-signature-height:200px] [--p-model-signature-width:auto]"></PModelSignature>
+      <PModelSignature className="block [--p-model-signature-height:120px] [--p-model-signature-width:auto] md:[--p-model-signature-height:200px]"></PModelSignature>
     </motion.div>
   );
 };
 
 const GT3 = () => {
   return (
-    <div className="flex items-baseline">
-      <PText className="text-[6rem]" size="inherit">
+    <div className="flex items-baseline px-4">
+      <PText className="text-[3rem] md:text-[6rem]" size="inherit">
         911 GT3 RS
       </PText>
     </div>

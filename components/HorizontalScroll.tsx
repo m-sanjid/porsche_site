@@ -70,7 +70,7 @@ const PorscheVideo = () => {
       ></video>
       <button
         onClick={handleMute}
-        className="absolute top-20 right-20 rounded-2xl bg-black/50 p-4 text-white"
+        className="absolute top-4 right-4 rounded-2xl bg-black/50 p-2 text-white md:top-20 md:right-20 md:p-4"
       >
         {muted ? "Unmute" : "Mute"}
       </button>
@@ -106,7 +106,7 @@ const BannerText = ({
       style={{ opacity: textOpacity, x: textX, scale: textScale }}
       className="absolute top-2"
     >
-      <PModelSignature className="block [--p-model-signature-height:360px] [--p-model-signature-width:auto]">
+      <PModelSignature className="block [--p-model-signature-height:200px] [--p-model-signature-width:auto] md:[--p-model-signature-height:360px]">
         911
       </PModelSignature>
     </motion.div>
@@ -146,16 +146,18 @@ const EndText = () => {
         damping: 30,
       }}
       style={{ zIndex: 100 }}
-      className="absolute top-1/2 left-64 max-w-md -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-white p-4 md:left-100"
+      className="absolute top-1/2 left-1/2 mx-4 max-w-md -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-white p-4 md:left-64 md:mx-0"
     >
-      <PHeading size="x-large">The</PHeading>
-      <PModelSignature className="block [--p-model-signature-height:160px] [--p-model-signature-width:auto]">
+      <PHeading size="large" className="text-center md:text-left">
+        The
+      </PHeading>
+      <PModelSignature className="block [--p-model-signature-height:120px] [--p-model-signature-width:auto] md:[--p-model-signature-height:160px]">
         911
       </PModelSignature>
-      <PHeading size="x-large" align="end">
+      <PHeading size="large" className="text-center md:text-right">
         GT3 RS
       </PHeading>
-      <PText color="primary">
+      <PText color="primary" className="text-center md:text-left">
         The Porsche 911 GT3 RS is a high-performance, track-focused variant of
         the iconic 911 series. Powered by a naturally aspirated 4.0-liter
         flat-six engine, it delivers exhilarating performance with a redline

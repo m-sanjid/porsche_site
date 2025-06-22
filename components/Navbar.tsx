@@ -16,7 +16,7 @@ const Navbar = () => {
       className="fixed top-0 z-50 h-16 w-full border-b bg-white"
       style={{ opacity: opacityProgress }}
     >
-      <div className="relative mx-auto flex max-w-7xl items-center">
+      <div className="relative mx-auto flex max-w-7xl items-center px-4">
         <motion.div
           className="absolute top-4 left-4 hidden h-10 w-10 md:block"
           style={{ scale: scaleProgress }}

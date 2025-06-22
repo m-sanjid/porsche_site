@@ -116,5 +116,27 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Improve mobile scrolling */
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  /* Mobile-specific improvements */
+  @media (max-width: 768px) {
+    /* Ensure minimum touch target size */
+    button,
+    a,
+    [role="button"] {
+      min-height: 44px;
+      min-width: 44px;
+    }
+
+    /* Improve text readability on mobile */
+    p,
+    span,
+    div {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
   }
 }
