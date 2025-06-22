@@ -17,7 +17,7 @@ const HorizontalScrollSection = () => {
     target: sectionRef,
     offset: ["start start", "end start"], // when it enters & exits viewport
   });
-  9;
+
   // Move horizontally based on scroll progress
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-150%"]);
 
@@ -81,9 +81,11 @@ const PorscheVideo = () => {
 const PorscheImage = () => {
   return (
     <div className="h-[100vh] w-[100vw]">
-      <img
+      <Image
         src="/chassis.avif"
         alt="Porsche"
+        width={1920}
+        height={1080}
         className="h-full w-full object-cover"
       />
     </div>

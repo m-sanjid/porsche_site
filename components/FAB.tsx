@@ -155,7 +155,7 @@ const ContactFAB = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.3 }}
               >
-                <PHeading size="large">Let's get connected</PHeading>
+                <PHeading size="large">Let&apos;s get connected</PHeading>
               </motion.div>
 
               <motion.div
