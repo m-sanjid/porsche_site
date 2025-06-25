@@ -3,7 +3,7 @@
 An immersive, scroll-driven microsite inspired by the Porsche 911 GT3 RS.  
 Built with **Next.js**, **Framer Motion**, and **Tailwind CSS**, the site showcases advanced motion design, scroll-linked animations, and SVG masking to deliver a high-performance visual experience.
 
-![Preview](public/og-cover.jpg)
+![Preview](public/og-cover.png)
 
 ## Live Demo
 
